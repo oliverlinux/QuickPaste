@@ -24,7 +24,7 @@ namespace MyAddIn
             string usertext = "";
             try
             {
-                usertext = File.ReadAllText(System.Environment.SpecialFolder.LocalApplicationData + "data.dat");
+                usertext = File.ReadAllText(System.Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\data.dat");
                 
             }
             catch

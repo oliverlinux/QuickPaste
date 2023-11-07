@@ -36,9 +36,9 @@
         {
             this.tab1 = this.Factory.CreateRibbonTab();
             this.group1 = this.Factory.CreateRibbonGroup();
+            this.checkBox1 = this.Factory.CreateRibbonCheckBox();
             this.button1 = this.Factory.CreateRibbonButton();
             this.button2 = this.Factory.CreateRibbonButton();
-            this.checkBox1 = this.Factory.CreateRibbonCheckBox();
             this.tab1.SuspendLayout();
             this.group1.SuspendLayout();
             this.SuspendLayout();
@@ -58,6 +58,12 @@
             this.group1.Label = "QuickPaste";
             this.group1.Name = "group1";
             // 
+            // checkBox1
+            // 
+            this.checkBox1.Checked = true;
+            this.checkBox1.Label = "Insert on new line";
+            this.checkBox1.Name = "checkBox1";
+            // 
             // button1
             // 
             this.button1.Label = "Insert Text";
@@ -69,12 +75,6 @@
             this.button2.Label = "Settings";
             this.button2.Name = "button2";
             this.button2.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.button2_Click);
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.Checked = true;
-            this.checkBox1.Label = "Insert on new line";
-            this.checkBox1.Name = "checkBox1";
             // 
             // Ribbon1
             // 

@@ -24,8 +24,8 @@ namespace MyAddIn
         private void button1_Click(object sender, EventArgs e)
         {
 
-            File.WriteAllText(System.Environment.SpecialFolder.LocalApplicationData + "data.dat",richTextBox1.Text);
-
+            File.WriteAllText(System.Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\data.dat", richTextBox1.Text);
+            this.Close();
         }
     }
 }
